@@ -93,7 +93,7 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := corot
+TARGET_BOOTLOADER_BOARD_NAME := KJ6
 TARGET_NO_BOOTLOADER := true
 
 # Platform
@@ -101,6 +101,9 @@ TARGET_BOARD_PLATFORM := mt6789
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# Fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # Treble
 BOARD_VNDK_VERSION := current
